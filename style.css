@@ -35,8 +35,12 @@ table,th,td{
 th, td {
     text-align: left;
     padding: 20px;
+    background-color: bisque;
 
 }
-tr:nth-child(odd){
+tr,td:nth-ch{
     background-color: bisque;
+}
+footer{
+    text-align: center;
 }
