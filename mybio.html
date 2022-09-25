@@ -10,13 +10,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--This is the header-->
          <header>
             <h1>BIOGRAPHY</h1>
+            <hr>
          </header>
+         <!--This is the main content-->
          <main>
+            <!--My display photo-->
             <div class="profile">
             <img src="Desire.jpeg" class="profile-potrait" alt="This is Kusasira Desire's photograph">
             </div>
+            <!--Brief personal statement-->
+            <div>
             <p>
                 <h4>KUSASIRA DESIRE SUUBI</h4>
                 I am a junior <span>web developer</span> at Innovation Village through ETC, aged 24 years born and raised in Uganda.<br>
@@ -32,7 +38,9 @@
                 I intend to develop an e-commerce site for my hair oil business,a strategy that will increase product outreach.<br>
                 I look forward to networking with junior and senior IT intellectuals for career growth in the digital world.
             </p>
-            <h3>
+            </div>
+            <!--A table detailing my academic history-->
+            <div>
             <h3>EDUCATION HISTORY</h3>
             <table>
                 <tr>
@@ -56,22 +64,62 @@
                     <td>UCE</td>
                 </tr>
             </table>
+            </div>
+            <!--These are my hobbies-->
+            <div class="hobbies">
             <h3>HOBBIES</h3>
             <ul>
                 <li>Listening to podcasts</li>
                 <li>Surfing the Internet</li>
                 <li>Reading motivational books</li>
-                <li>Music</li>
+                <li>Listening to Music</li>
                 <li>Mountaineering</li>
-            </ul>
-            <footer>
-            <p>
-                Find me on
-            </p>
-            <img src="/Icons/github_icon.svg" alt="Github Icon">
-            <img src="/Icons/linkedin_logo_icon.svg" alt="Linkedin Icon">
-            <img src="/Icons/twitter_icon.svg" alt="Twitter Icon">
-        </footer>
+            </ul> 
+            </div>
+            <!--These are social media links-->
+            <div id="social-icons">
+            <u>
+                <p>Find me on</p> 
+             </u>
+             <!--Github icon-->
+             <a href="https://github.com/DesireKusasira"><img src="/Icons/github_icon.svg" alt="Github"></a>
+             <!--Twitter icon-->
+             <a href="https://twitter.com/acy_desire?s=09"><img src="/Icons/twitter_icon.svg" alt="twitter"></a>
+             <!--Linkedin icon-->
+            <a href="https://www.linkedin.com/in/kusasira-desire-7b7772178/"> <img src="/Icons/linkedin_logo_icon.svg" alt="Linkedin"></a>
+            </div> 
+            <br>
+        <!--This is a form-->
+        <form action="/login-form" method="post">
+        <label for="firstname">First Name : </label>
+        <input type="text" id="firstname">&nbsp;&nbsp;
+        <label for="lastname" >Last Name : </label>
+        <input type="text" id="lastname"><br><br>
+        <label for="tel">Tel number :</label>
+        <input type="text" id="tel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="age">Age :<label>
+        <input type="number" id="age"><br><br>
+        <!--These are radio buttons-->
+        <strong><p>The popular web languages</p></strong>
+        <label for="html">Html</label>
+        <input type="radio" id="lang" name="html" value="html">
+        <label for="css">Css</label>
+        <input type="radio" id="css" name="css" value="Css">
+        <label for="javascript">Javascript</label>
+        <input type="radio" id="javascript" name="javascript" value="javascript">
+        <label for="c++">C++</label>
+        <input type="radio" id="c++" name="c++" value="c++"><br>
+        <!--This is a checkbox-->
+        <strong><p>Level of expertise</p></strong>
+        <label for="beginner">Beginner</label>
+        <input type="checkbox" id="beginner" name="beginner">
+        <label for="intermediate">Intermediate</label>
+        <input type="checkbox" id="intermediate" name="intermediate">
+        <label for="advanced">Advanced</label>
+        <input type="checkbox" id="advanced" name="advanced"><br><br>
+        <!--This is a submit button-->
+        <button type="submit">Submit</button>
+        </form>
          </main>
     </body>
 </html>
