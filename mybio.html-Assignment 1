@@ -89,12 +89,13 @@
             <a href="https://www.linkedin.com/in/kusasira-desire-7b7772178/"> <img src="/Icons/linkedin_logo_icon.svg" alt="Linkedin"></a>
             </div> 
             <br>
+            <hr> 
         <!--This is a form-->
         <form action="/login-form" method="post">
         <label for="firstname">First Name : </label>
-        <input type="text" id="firstname">&nbsp;&nbsp;
+        <input type="text" id="firstname" value="Desire">&nbsp;&nbsp;
         <label for="lastname" >Last Name : </label>
-        <input type="text" id="lastname"><br><br>
+        <input type="text" id="lastname" value="Kusasira"><br><br>
         <label for="tel">Tel number :</label>
         <input type="text" id="tel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <label for="age">Age :<label>
