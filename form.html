@@ -2,6 +2,7 @@
 <html>
     <head>
     <title>Login Form</title>
+    <!--This is the form styling-->
     <style>
     .signup{
         max-width: 600px;
@@ -31,25 +32,37 @@
       button:active{
         background-color: rgb(245, 153, 168);
       }
+      button{
+        background-color: rgb(167, 239, 22);
+      }
     </style>
+    <!--End of form styling-->
     </head>
+
     <body style="background-color: rgb(158, 230, 252);">
         <ul >
             <li><a href="index.html">Home</a></li>
             <li><a href="form.html">Login form</a></li>
         </ul>
+        <!--The sign up form-->
         <div class="signup">
     <h2>SIGN UP FORM</h2>
     <p>Login your credentials to access the Tour guide.</p>
+    <!--This is for the first name-->
     <form action="login-form"method="post" autocomplete="on" >
     <label for="fname">First Name: </label>
+    <!--This is the last name-->
     <input type="text" id="fname" placeholder="Your first name.."><br><br>
+    <!--This is for the last name-->
     <label for="lname">Last Name: </label>
     <input type="text" id="lname" placeholder="Your last name.. "><br><br>
-    <label for="email">Email:&nbsp;&nbsp;&nbsp </label>
+   <!--This is for the amil-->
+    <label for="email">Email:&nbsp;&nbsp;</label>
     <input type="text" id="email" placeholder=" Your email address.." required><br><br>
+    <!--This is for the telephone number-->
     <label for="tel">Telephone: </label>
     <input type="text" id="tel" placeholder="Your mobile contact" required><br><br>
+    <!--This is for the nationality -->
     <label for="nationality">Nationality: </label>
     <select id="nationality"name="countries">
     <option value="ug">Ugandan</option>
@@ -60,10 +73,13 @@
     <option value="bur">Burundian</option>
     <option value="ssd">Sudanese</option>
     </select><br><br>
+    <!--This is for create password-->
     <label for="pwd">Create Password :</label>
     <input type="password" id="pwd" required placeholder=" Passowrd must contain atleast 6 characters"><br><br>
+    <!--This is for confirm password-->
     <label for="confirm">Confirm password :</label>
     <input type="password" id="confirm" required placeholder="Password must contain atleast 6 characters">
+   <!--This is a checkbox for favourite destinations-->
     <h3>Choose your favourite destinations in Uganda</h3>
     <input type="radio" id="Jinja" required>
     <label for="jinja">Jinja</label>
@@ -77,7 +93,8 @@
     <label for="ebbs">Entebbe</label><br><br>
     <input type="checkbox">
     <label for="checkbox">I agree to the information provided in this form</label><br><br>
-<button type="submit">Submit</button>
+    <!--This is a submit button-->
+    <button type="submit">Submit</button>
     </form>
         </div>
     </body>
