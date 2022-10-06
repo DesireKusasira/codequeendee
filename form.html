@@ -2,22 +2,83 @@
 <html>
     <head>
     <title>Login Form</title>
+    <style>
+    .signup{
+        max-width: 600px;
+        background-color: rgb(236, 243, 248);
+        margin: auto;
+        padding: 30px;
+        border-radius: 20px;
+      }
+      input[type="text"],[type="password"],select{
+        width:100% ;
+        background-color: rgb(214, 214, 232);
+        padding: 5px 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid navy;
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus{
+        background-color:bisque;
+      }
+      input[type="password"]:focus{
+        background-color: blanchedalmond;
+      }
+      button:hover{
+        background-color: yellow;
+      }
+      button:active{
+        background-color: rgb(245, 153, 168);
+      }
+    </style>
     </head>
     <body style="background-color: rgb(158, 230, 252);">
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Login form</a></li>
+        </ul>
+        <div class="signup">
     <h2>SIGN UP FORM</h2>
-    <p>Login your credentials to access the Tour guide</p>
-    <form action="login-form"method="post">
+    <p>Login your credentials to access the Tour guide.</p>
+    <form action="login-form"method="post" autocomplete="on" >
     <label for="fname">First Name: </label>
-    <input type="text" id="fname"><br><br>
+    <input type="text" id="fname" placeholder="Your first name.."><br><br>
     <label for="lname">Last Name: </label>
-    <input type="text" id="lname"><br><br>
+    <input type="text" id="lname" placeholder="Your last name.. "><br><br>
     <label for="email">Email:&nbsp;&nbsp;&nbsp </label>
-    <input type="text" id="email" required><br><br>
+    <input type="text" id="email" placeholder=" Your email address.." required><br><br>
     <label for="tel">Telephone: </label>
-    <input type="text" id="tel"><br><br>
+    <input type="text" id="tel" placeholder="Your mobile contact" required><br><br>
+    <label for="nationality">Nationality: </label>
+    <select id="nationality"name="countries">
+    <option value="ug">Ugandan</option>
+    <option value="ky">Kenyan</option>
+    <option value="tz">Tanzanian</option>
+    <option value="congo">Congolese</option>
+    <option value="rw">Rwandese</option>
+    <option value="bur">Burundian</option>
+    <option value="ssd">Sudanese</option>
+    </select><br><br>
     <label for="pwd">Create Password :</label>
-    <input type="password" id="pwd" required>
-
+    <input type="password" id="pwd" required placeholder=" Passowrd must contain atleast 6 characters"><br><br>
+    <label for="confirm">Confirm password :</label>
+    <input type="password" id="confirm" required placeholder="Password must contain atleast 6 characters">
+    <h3>Choose your favourite destinations in Uganda</h3>
+    <input type="radio" id="Jinja" required>
+    <label for="jinja">Jinja</label>
+    <input type="radio" id="kabale">
+    <label for="kabale">Kabale</label>
+    <input type="radio" id="gulu">
+    <label for="gulu">Gulu</label>
+    <input type="radio" id="fort">
+    <label for="fort">Fortportal</label>
+    <input type="radio" id="ebbs">
+    <label for="ebbs">Entebbe</label><br><br>
+    <input type="checkbox">
+    <label for="checkbox">I agree to the information provided in this form</label><br><br>
+<button type="submit">Submit</button>
     </form>
+        </div>
     </body>
 </html>
